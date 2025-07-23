@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #d2e0fb, #f7d9ff);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.input-card input,
+.search-card input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.input-card button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.input-card button:hover {
+  background: linear-gradient(135deg, #4e0fcb, #1a63e0);
+  transform: translateY(-2px);
+}
+
+ul#bookmark-list {
+  list-style: none;
+}
+
+.bookmark-item {
+  background: #f9f9f9;
+  padding: 15px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.bookmark-item:hover {
+  background: #eef4ff;
+  transform: scale(1.01);
+}
+
+.bookmark-info a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.bookmark-actions button {
+  margin-left: 8px;
+  background-color: #eeeeee;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.bookmark-actions button:hover {
+  background-color: #d6e4ff;
+}
+
+.bookmark-actions .delete {
+  color: #f44336;
+}
+
+.bookmark-actions .edit {
+  color: #2196f3;
+}
+
+.delete-button {
+  background-color: #e74c3c;       /* Nice red */
+  color: white;                    /* White text */
+  border: none;                    /* No border */
+  padding: 8px 14px;               /* Spacing inside */
+  border-radius: 8px;              /* Rounded corners */
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;                 /* Hand cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;       /* Darker red on hover */
+  transform: scale(1.05);          /* Slight zoom on hover */
+}
+
+
+.edit-button {
+  background-color: #3498db;       /* Nice red */
+  color: white;                    /* White text */
+  border: none;                    /* No border */
+  padding: 8px 14px;               /* Spacing inside */
+  border-radius: 8px;              /* Rounded corners */
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;                 /* Hand cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button:hover {
+  background-color: #2980b9;       /* Darker red on hover */
+  transform: scale(1.05);          /* Slight zoom on hover */
+}
+
+
+/* Make the li a flexbox */
+.bookmark-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; /* spacing between items */
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Let the span (text part) grow to take up space */
+.bookmark-item span {
+  flex-grow: 1;
+}
+
+/* Space between edit and delete buttons */
+.edit-button {
+  margin-right: 10px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔖 Bookmark Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🔖 Bookmark Manager</h1>
+
+    <div class="card input-card">
+      <input type="text" id="title" placeholder="Enter site title (e.g. Google)" />
+      <input type="text" id="url" placeholder="Enter URL (e.g. https://google.com)" />
+      <button id="add-btn">+ Add Bookmark</button>
+    </div>
+
+    <div class="card search-card">
+      <input type="text" id="search" placeholder="🔍 Search bookmarks..." />
+    </div>
+
+    <ul id="bookmark-list" class="card">
+      <!-- bookmarks appear here -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
